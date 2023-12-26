@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "roboto";
+    src: url('/assets/fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "roboto";
+    src: url('/assets/fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    font-family: "roboto";
+    margin: 0;
+    margin-inline: 0;
+    color: hsl(235, 18%, 26%);
+}
+body {
+    background-color: hsl(234, 29%, 20%);
+}
+div.main-card {
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    border-radius: 16px;
+    width: 65%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+div.details-and-email-box {
+    padding: 10% 5%;
+}
+img.desktop-image {
+    display: block;
+}
+img.mobile-image {
+    display: none;
+}
+h2.card-title {
+    font-size: 45px;
+}
+p.card-subtitle {
+    margin: 20px 0;
+    margin-bottom: 30px;
+}
+div.benefits-list {
+    display: flex;
+    margin: 10px 0;
+}
+p.benefit-name {
+    margin-left: 20px;
+}
+form.email-form {
+    margin-top: 40px;
+    position: relative;
+}
+label.email-label {
+    font-size: 12px;
+    font-weight: bold;
+}
+p.error-label {
+    font-size: 12px;
+    font-weight: bold;
+    color: hsl(4, 100%, 67%);
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: none;
+}
+input.default-state {
+    margin-top: 10px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid hsl(231, 7%, 60%);
+    box-sizing: border-box;
+    outline: none;
+}
+.error-state {
+    margin-top: 10px;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid hsl(4, 100%, 67%);
+    color: hsl(4, 100%, 67%);
+    background-color: hsla(4, 100%, 67%, 0.2);
+}
+.error-state::placeholder {
+    color: hsl(4, 100%, 67%);
+}
+button.submit-button {
+    margin-top: 20px;
+    padding: 16px;
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border: 1px solid hsl(234, 29%, 20%);
+    border-radius: 8px;
+}
+button.submit-button:hover {
+    background-color: hsl(4, 100%, 67%);
+    border: 1px solid hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+div.success-card {
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    border-radius: 16px;
+    width: 300px;
+    display: none;
+}
+img.success-icon {
+    width: 50px;
+    height: 50px;
+}
+h2.success-title {
+    margin: 20px 0;
+    font-size: 50px;
+}
+p.success-description {
+    margin-bottom: 20px;
+}
+span.user-email {
+    font-weight: bold;
+}
+button.dismiss-button {
+    margin-top: 20px;
+    padding: 16px;
+    width: 100%;
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    border: 1px solid hsl(234, 29%, 20%);
+    border-radius: 8px;
+}
+button.dismiss-button:hover {
+    background-color: hsl(4, 100%, 67%);
+    border: 1px solid hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+    div.main-card {
+        height: 70%;
+        width: 80%;
+    }
+    h2.card-title {
+        font-size: 38px;
+    }
+}
+@media screen and (max-width: 880px) {
+    div.main-card {
+        height: 60%;
+        width: 90%;
+    }
+    div.details-and-email-box {
+        padding: 5% 3%;
+    }
+    h2.card-title {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 680px) {
+    body {
+        background-color: white;
+    }
+    div.main-card {
+        width: 100%;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        transform: none;
+        box-sizing: border-box;
+        border-radius: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+    div.details-and-email-box {
+        padding: 8% 3%;
+        order: 1;
+    }
+    img.desktop-image {
+        display: none;
+    }
+    img.mobile-image {
+        display: block;
+    }
+    h2.card-title {
+        font-size: 40px;
+    }
+    div.success-card {
+        width: 100%;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        transform: none;
+        box-sizing: border-box;
+        border-radius: 0;
+        padding: 20px;
+        background-color: transparent;
+        height: 100%;
+    }
+    img.success-icon {
+        margin-top: 100px;
+    }
+    h2.success-title {
+        margin-top: 30px;
+    }
+    p.success-description {
+        margin-bottom: 20px;
+    }
+    button.dismiss-button {
+        position: absolute;
+        bottom: 40px;
+        right: 20px;
+        left: 20px;
+        width: auto;
+        box-sizing: border-box;
+    }
+}

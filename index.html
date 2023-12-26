@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="/main.css">
+  
+</head>
+<body>
+  <div class="main-card">
+    <div class="details-and-email-box">
+      <h2 class="card-title">Stay updated!</h2>
+      <p class="card-subtitle">Join 60,000+ product managers receiving monthly updates on:</p>
+      <div class="benefits-list">
+        <img src="/assets/images/icon-list.svg" alt="list-icon" class="list-icon"><p class="benefit-name">Product discovery and building what matters</p>
+      </div>
+      <div class="benefits-list">
+        <img src="/assets/images/icon-list.svg" alt="list-icon" class="list-icon"><p class="benefit-name">Measuring to ensure updates are a success</p>
+      </div>
+      <div class="benefits-list">
+        <img src="/assets/images/icon-list.svg" alt="list-icon" class="list-icon"><p class="benefit-name">And much more!</p>
+      </div>
+      <form class="email-form">
+        <label class="email-label">Email address</label>
+        <p class="error-label">Valid email required</p>
+        <input type="email" name="enter-email" class="default-state" placeholder="email@company.company">
+        <button class="submit-button">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+    <img src="/assets/images/illustration-sign-up-desktop.svg" class="desktop-image" alt="desktop-image">
+    <img src="/assets/images/illustration-sign-up-mobile.svg" class="mobile-image" alt="mobile-image">
+  </div>
+  <div class="success-card">
+    <img src="/assets/images/icon-success.svg" alt="success-icon" class="success-icon">
+    <h2 class="success-title">Thanks for subscribing!</h2>
+    <p class="success-description">A confirmation email has been sent to <span class="user-email">user email</span>. Please open it and click the button inside to confirm the subscription.</p>
+    <button class="dismiss-button">Dismiss message</button>
+  </div>
+  <script src="sandbox.js"></script>
+</body>
+</html>
